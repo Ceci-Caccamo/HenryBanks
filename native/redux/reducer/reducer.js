@@ -1,4 +1,4 @@
-import {} from './constants'
+import {LOGIN_SUCCESS} from './constants/constants'
 
 const initialState =  {
     user: null,
@@ -7,11 +7,10 @@ const initialState =  {
 
 export default dataReducer = (state = initialState, action) => {
     switch(action.type) {
-        case FETCHING_DATA:
+        case LOGIN_SUCCESS:
             return {
                 ...state,
-                data: [],
-                isFeching: true
+                  user: action.user
             }
         default:
         return state
