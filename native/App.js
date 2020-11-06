@@ -10,11 +10,14 @@ import RechargeScreen from './screens/RechargeScreen';
 import Register from './screens/Register';
 import SendMonyScreen from './screens/SendMonyScreen';
 import Transactions from './screens/Transactions';
+import Welcome from './screens/welcome';
+
 const Stack = createStackNavigator()//contiene la navegacion
 //stack.screen contiene la pantalla
 function MyStack(){
   return (
     <Stack.Navigator>
+      <Stack.Screen name="welcome" component={Welcome}/>
       <Stack.Screen name="Estatistics" component={Estatistics}/>
       <Stack.Screen name="Login" component={Login}/>
       <Stack.Screen name="PosConsolidada" component={PosConsolidada}/>
