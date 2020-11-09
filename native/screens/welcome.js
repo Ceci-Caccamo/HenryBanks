@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {View, Button, Text, ScrollView, StyleSheet, TouchableHighlight, ImageBackground} from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 const image = { uri: "https://cdn.pixabay.com/photo/2016/05/22/20/13/background-1409125_960_720.png" };
 
 function Welcome({navigation}) {
 const onPressLogin = () => {navigation.navigate('Login');}
 const onPressRegister = () => {navigation.navigate('Register');}
+const onPressFAQ = () => {navigation.navigate('FAQ');}
+
 
 return (
 <View style={styles.container}>
@@ -36,7 +37,7 @@ return (
       <Text>Registrarse</Text>
     </View>
   </TouchableHighlight>
-  <TouchableHighlight>
+  <TouchableHighlight onPress={onPressFAQ}>
     <View>
       <Text  style={{
          backgroundColor: 'transparent',

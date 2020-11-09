@@ -1,16 +1,24 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import {View, Button, Text, ScrollView, StyleSheet, TouchableHighlight, ImageBackground} from 'react-native';
+import { Link } from '@react-navigation/native';
+import {View, Button, Text, ScrollView, StyleSheet, TouchableHighlight} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Header({navigation}) {
-const onDisplayMenu = () => {navigation.navigate('Menu');}
 const onPressLogout = () => {console.log('salir')}
 
 return (
   <View style={styles.container}>
-    <TouchableHighlight onPress={onDisplayMenu}>
+    <TouchableHighlight>
+    <Link to="/Menu">
       <Icon name="bars" color="white" size={25} />
+      </Link>
+    </TouchableHighlight>
+    <TouchableHighlight>
+    <View style={styles.logout}>
+    <Link to="/Menu">
+    <Icon name="home" color="white" size={25} /></Link>
+    </View>
     </TouchableHighlight>
     <TouchableHighlight onPress={onPressLogout}>
       <View style={styles.logout}>

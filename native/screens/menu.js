@@ -6,14 +6,28 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const {width, height} = Dimensions.get('window')
 
 function Menu({navigation}) {
-const onPressLogout = () => {console.log('salir')}
+const onPressTrasn = () => {navigation.navigate('Transactions');}
+const onPressRecharge = () => {navigation.navigate('RechargeScreen');}
+const onPressSend = () => {navigation.navigate('SendMonyScreen');}
 
 return (
   <View style={styles.menu}>
     <ScrollView>
-      <TouchableOpacity onPress={onPressLogout}>
-        <View style={styles.logout}>
+      <TouchableOpacity onPress={onPressRecharge}>
+        <View style={styles.row}>
           <Text  style={{color: '#fff'}}>Recargar saldo </Text>
+          <Icon name="caret-right" color="orange" size={25} />
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={onPressSend}>
+        <View style={styles.row}>
+          <Text  style={{color: '#fff'}}>Enviar dinero </Text>
+          <Icon name="caret-right" color="orange" size={25} />
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={onPressTrasn}>
+        <View style={styles.row}>
+          <Text  style={{color: '#fff'}}>Transacciones </Text>
           <Icon name="caret-right" color="orange" size={25} />
         </View>
       </TouchableOpacity>
@@ -32,7 +46,7 @@ const styles = StyleSheet.create({
     padding:10,
     justifyContent:'space-between'
   },
-  logout:{
+  row:{
     flexDirection:'row'
   }
 });
