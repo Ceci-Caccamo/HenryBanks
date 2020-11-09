@@ -5,7 +5,7 @@ import { View, Text } from 'react-native'
 export default function PosConsolidada() {
     return (
         <View>
-        <Header/> 
+        <Header/>
 
             <Text></Text>
         </View>
