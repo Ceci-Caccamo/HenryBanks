@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
       alignItems: "center",
       backgroundColor: "purple",
       padding: 50,
-      borderRadius: 20
+      borderRadius: 10
     },
 });
 

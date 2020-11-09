@@ -1,19 +1,26 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { Link } from '@react-navigation/native';
-import {View, Button, Text, ScrollView, StyleSheet, TouchableHighlight} from 'react-native';
+import {LayoutAnimation, View, Button, Text, ScrollView, StyleSheet, TouchableHighlight} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Menu from './menu';
 
 function Header({navigation}) {
-const onPressLogout = () => {console.log('salir')}
+  const [expanded, setExpanded]= React.useState(false)
+
+  function toggleExpand(){
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    expanded ? setExpanded(false) : setExpanded(true)
+  }
+  const onPressLogout = () => {console.log('salir')}
 
 return (
   <View style={styles.container}>
-    <TouchableHighlight>
-    <Link to="/Menu">
+    <TouchableHighlight onPress={toggleExpand}>
       <Icon name="bars" color="white" size={25} />
-      </Link>
     </TouchableHighlight>
+    {expanded? <Menu/> : null }
+
     <TouchableHighlight>
     <View style={styles.logout}>
     <Link to="/Menu">

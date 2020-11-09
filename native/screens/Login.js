@@ -1,7 +1,6 @@
 import React from "react";
 import { useFormik } from "formik";
 import {View} from "react-native";
-import Header from './header';
 
 const Login = () => {
   const formik = useFormik({
@@ -14,8 +13,7 @@ const Login = () => {
     },
   });
   return (
-    <View>
-    <Header/>
+
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="email">Email Address</label>
       <input
@@ -37,7 +35,7 @@ const Login = () => {
 
       <button type="submit">Submit</button>
     </form>
-    </View>
+  
   );
 };
 export default Login
