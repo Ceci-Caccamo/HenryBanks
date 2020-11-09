@@ -6,9 +6,11 @@ import {
   ScrollView,
   TextInput,
   Button,
-  SafeAreaView,
+  SafeAreaView,TouchableHighlight
 } from "react-native";
 import { Formik, Form, Field } from "formik";
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Link } from '@react-navigation/native';
 
 import { useDispatch } from "react-redux";
 
@@ -19,6 +21,10 @@ const Register = ({ id, name,email, password }) => {
 
   return (
     <View>
+                <View>
+                <Link to="/Welcome">
+                <Icon name="angle-left" color="orange" size={50} /></Link>
+                </View>
       <Formik
         initialValues={{
           name,

@@ -1,6 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
-import {View} from "react-native";
+import {View, TouchableHighlight} from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Link } from '@react-navigation/native';
 
 const Login = () => {
   const formik = useFormik({
@@ -13,6 +15,11 @@ const Login = () => {
     },
   });
   return (
+    <View>
+          <View>
+          <Link to="/Welcome">
+          <Icon name="angle-left" color="orange" size={50} /></Link>
+          </View>
 
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="email">Email Address</label>
@@ -35,7 +42,7 @@ const Login = () => {
 
       <button type="submit">Submit</button>
     </form>
-  
+    </View>
   );
 };
 export default Login
