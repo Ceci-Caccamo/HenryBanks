@@ -5,7 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';//instalar
 import { createStackNavigator } from '@react-navigation/stack'//instalar
 import Register from './screens/Register'
 import { Provider } from 'react-redux';
-import  { st }  from './store/store';   
+import  { st }  from './store/store';
 import Estatistics from './screens/Estatistics';
 import Login from './screens/Login';
 import PosConsolidada from './screens/PosConsolidada';
@@ -15,7 +15,7 @@ import SendMonyScreen from './screens/SendMonyScreen';
 import Transactions from './screens/Transactions';
 import Header from './screens/header';
 import Menu from './screens/menu';
-import FAQ from './screens/FAQ';
+import FAQ from './screens/FAQ'; 
 
 const Stack = createStackNavigator()//contiene la navegacion
 //stack.screen contiene la pantalla

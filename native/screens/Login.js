@@ -4,7 +4,7 @@ import {View, TouchableHighlight} from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Link } from '@react-navigation/native';
 
-const Login = () => {
+const Login = () => { 
   const formik = useFormik({
     initialValues: {
       email: "",

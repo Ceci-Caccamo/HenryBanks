@@ -7,7 +7,7 @@ export default function RechargeScreen() {
         <View>
         <Header/>
 
-            <Text></Text>
+            <Text></Text> 
         </View>
     )
 }

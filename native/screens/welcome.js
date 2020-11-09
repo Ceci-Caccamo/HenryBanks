@@ -14,7 +14,7 @@ return (
 <View style={styles.container}>
 <ImageBackground source={image} style={styles.image}>
 <Text style={{
-  backgroundColor: 'transparent',
+  backgroundColor: 'transparent', 
   fontSize: 100,
   color: '#fff',
   padding: 35

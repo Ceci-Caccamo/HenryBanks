@@ -26,7 +26,7 @@ const Register = ({ id, name,email, password }) => {
                 <Icon name="angle-left" color="orange" size={50} /></Link>
                 </View>
       <Formik
-        initialValues={{
+        initialValues={{ 
           name,
           email,
           password,

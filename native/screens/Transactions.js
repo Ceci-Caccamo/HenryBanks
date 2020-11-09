@@ -9,6 +9,6 @@ export default function Transactions() {
         <Header/>
 
             <Text></Text>
-        </View>
+        </View> 
     )
 }

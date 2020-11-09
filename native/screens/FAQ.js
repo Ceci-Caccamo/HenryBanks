@@ -7,7 +7,7 @@ function Accordian({title, data}) {
   const [state, setState]= React.useState({
     data: data,
     expanded: false
-  })
+  })  
 
   function toggleExpand(){
     state.expanded ? setState({expanded: false}) : setState({expanded: true})
