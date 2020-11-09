@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Header({navigation}) {
 const onPressLogout = () => {console.log('salir')}
-
+ 
 return (
   <View style={styles.container}>
     <TouchableHighlight>

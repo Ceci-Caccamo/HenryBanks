@@ -9,6 +9,6 @@ export default function PosConsolidada() {
         <Header/>
 
             <Text></Text>
-        </View>
+        </View> 
     )
 }

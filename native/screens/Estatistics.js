@@ -5,7 +5,7 @@ import Header from './header';
 export default function Estatistics() {
     return (
         <View>
-        <Header/>
+        <Header/> 
 
             <Text></Text>
         </View>

@@ -8,7 +8,7 @@ export default function Transactions() {
         <View>
         <Header/>
 
-            <Text></Text>
+            <Text></Text> 
         </View>
     )
 }

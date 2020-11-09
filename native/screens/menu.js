@@ -17,7 +17,7 @@ return (
         <View style={styles.row}>
           <Text  style={{color: '#fff'}}>Recargar saldo </Text>
           <Icon name="caret-right" color="orange" size={25} />
-        </View>
+        </View>  
       </TouchableOpacity>
       <TouchableOpacity onPress={onPressSend}>
         <View style={styles.row}>

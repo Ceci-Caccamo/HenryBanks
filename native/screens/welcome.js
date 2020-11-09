@@ -12,7 +12,7 @@ const onPressFAQ = () => {navigation.navigate('FAQ');}
 
 return (
 <View style={styles.container}>
-<ImageBackground source={image} style={styles.image}>
+<ImageBackground source={image} style={styles.image}> 
 <Text style={{
   backgroundColor: 'transparent',
   fontSize: 100,

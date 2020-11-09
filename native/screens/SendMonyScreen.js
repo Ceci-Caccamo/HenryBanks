@@ -8,7 +8,7 @@ export default function SendMonyScreen() {
         <View>
         <Header/>
 
-            <Text></Text>
+            <Text></Text> 
         </View>
     )
 }
