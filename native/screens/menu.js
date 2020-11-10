@@ -5,9 +5,9 @@ import {Dimensions, View, Text, ScrollView, StyleSheet, TouchableOpacity} from '
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const {width, height} = Dimensions.get('window')
-
+  
 function Menu({navigation}) {
- 
+
 return (
   <View style={styles.menu}>
     <ScrollView>

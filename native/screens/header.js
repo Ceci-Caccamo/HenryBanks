@@ -4,8 +4,8 @@ import { Link } from '@react-navigation/native';
 import {LayoutAnimation, View, Button, Text, ScrollView, StyleSheet, TouchableHighlight} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Menu from './menu';
-
-function Header({navigation}) { 
+  
+function Header({navigation}) {
   const [expanded, setExpanded]= React.useState(false)
 
   function toggleExpand(){

@@ -7,7 +7,7 @@ function Accordian({title, data}) {
   const [state, setState]= React.useState({
     data: data,
     expanded: false
-  })  
+  })
 
   function toggleExpand(){
     state.expanded ? setState({expanded: false}) : setState({expanded: true})
@@ -46,7 +46,11 @@ export default function FAQ(){
     }
       return (
       <View style={styles.container}>
-        <View><Text style={styles.title}>Olvide mi usuario, click aqui <Icon name="envelope-square" color="orange" size={25} /></Text></View>
+                <View>
+                <Link to="/Welcome">
+                <Icon name="angle-left" color="orange" size={50} /></Link>
+                </View>
+        <View style={{marginTop: 30,}}><Text style={styles.title}>Olvide mi usuario, click aqui <Icon name="envelope-square" color="orange" size={25} /></Text></View>
         <View><Text style={styles.title}>Olvide mi contraseña, click aqui <Icon name="key" color="orange" size={25} /></Text></View>
         <ScrollView>
         { renderAccordians() }
@@ -62,7 +66,7 @@ const styles = StyleSheet.create({
   container:{
     backgroundColor: '#927192',
     flex: 1,
-    paddingTop :30,
+    paddingTop :10,
     justifyContent:'space-between'
   },
   row:{

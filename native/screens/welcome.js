@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import {View, Button, Text, ScrollView, StyleSheet, TouchableHighlight, ImageBackground} from 'react-native';
+import {View, Button, Text, ScrollView, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
 
 const image = { uri: "https://cdn.pixabay.com/photo/2016/05/22/20/13/background-1409125_960_720.png" };
 
@@ -14,7 +14,7 @@ return (
 <View style={styles.container}>
 <ImageBackground source={image} style={styles.image}>
 <Text style={{
-  backgroundColor: 'transparent', 
+  backgroundColor: 'transparent',
   fontSize: 100,
   color: '#fff',
   padding: 35
@@ -27,27 +27,28 @@ return (
        color: '#fff',
        padding: 40
      }}>
-  <TouchableHighlight onPress={onPressLogin}>
+     <View style={styles.buttonContainer}>
+  <TouchableOpacity onPress={onPressLogin}>
     <View style={styles.button}>
       <Text>Ingresar</Text>
     </View>
-  </TouchableHighlight>
-  <TouchableHighlight onPress={onPressRegister}>
+  </TouchableOpacity>
+  <TouchableOpacity onPress={onPressRegister}>
     <View style={styles.button}>
       <Text>Registrarse</Text>
     </View>
-  </TouchableHighlight>
-  <TouchableHighlight onPress={onPressFAQ}>
+  </TouchableOpacity>
+  <TouchableOpacity onPress={onPressFAQ}>
     <View>
       <Text  style={{
          backgroundColor: 'transparent',
          fontSize: 20,
          color: 'grey',
-         padding: 30
+         marginTop:10,
        }}>Necesitas ayuda?</Text>
     </View>
-  </TouchableHighlight>
-
+  </TouchableOpacity>
+    </View>
      </Text>
    </ImageBackground>
 </View>
@@ -56,22 +57,25 @@ return (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#1D3448',
     flex: 1,
-    justifyContent: "center",
-    alignItems:"center",
+    backgroundColor: '#1D3448',
     },
-    image: {
+  image: {
     flex: 1,
     resizeMode: "cover",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignItems:"center"
     },
-    button: {
-      borderWidth: 0.1,
-      alignItems: "center",
+  buttonContainer: {
+      flex: 1,
+      justifyContent:"center",
+    },
+  button: {
+      borderWidth:0.1,
+      borderColor: 'grey',
+      flex: 1,
       backgroundColor: "purple",
-      padding: 50,
-      borderRadius: 10
+      marginTop:10,
     },
 });
 

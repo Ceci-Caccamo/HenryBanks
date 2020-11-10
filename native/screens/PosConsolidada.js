@@ -6,9 +6,9 @@ import Header from './header';
 export default function PosConsolidada() {
     return (
         <View>
-        <Header/> 
+        <Header/>
 
             <Text></Text>
         </View>
-    )
+    )   
 }
