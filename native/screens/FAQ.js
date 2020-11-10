@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, Text, ScrollView, StyleSheet, TouchableOpacity, ImageBackground} from 'react-native';
 import { Link } from '@react-navigation/native';
+import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Accordian({title, data}) {
@@ -41,11 +42,16 @@ export default function FAQ(){
               />
           );
       })
-      console.log(faqText);
       return items;
     }
       return (
       <View style={styles.container}>
+      <LinearGradient
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        colors={['#DA9FD9',  '#423867']}
+        style={{flex: 1}}
+      >
                 <View>
                 <Link to="/Welcome">
                 <Icon name="angle-left" color="orange" size={50} /></Link>
@@ -55,6 +61,7 @@ export default function FAQ(){
         <ScrollView>
         { renderAccordians() }
         </ScrollView>
+         </LinearGradient>
       </View>
     );
   }
@@ -64,7 +71,7 @@ export default function FAQ(){
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor: '#927192',
+    backgroundColor: 'transparent',
     flex: 1,
     paddingTop :10,
     justifyContent:'space-between'

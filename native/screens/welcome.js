@@ -17,15 +17,14 @@ return (
   backgroundColor: 'transparent',
   fontSize: 100,
   color: '#fff',
-  padding: 35
+  fontWeight: 'bold',  
 }}>HBank</Text>
 
    <Text
      style={{
        backgroundColor: 'transparent',
        fontSize: 30,
-       color: '#fff',
-       padding: 40
+       color: '#fff'
      }}>
      <View style={styles.buttonContainer}>
   <TouchableOpacity onPress={onPressLogin}>
