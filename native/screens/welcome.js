@@ -17,7 +17,7 @@ return (
   backgroundColor: 'transparent',
   fontSize: 100,
   color: '#fff',
-  fontWeight: 'bold',  
+  fontWeight: 'bold',
 }}>HBank</Text>
 
    <Text
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
       borderWidth:0.1,
       borderColor: 'grey',
       flex: 1,
-      backgroundColor: "purple",
+      backgroundColor: "#422C63",
       marginTop:10,
     },
 });

@@ -21,7 +21,7 @@ function Accordian({title, data}) {
               <TouchableOpacity onPress={toggleExpand}>
                 <View style={styles.row}>
                 <Text style={styles.title}>{title}</Text>
-                <Icon name={state.expanded? "angle-up":"angle-down"} color="orange" size={25} />
+                <Icon name={state.expanded? "angle-up":"angle-down"} color="#422C63" size={25} />
                 </View>
               </TouchableOpacity>
               {state.expanded ? <View style={styles.child}><Text style={styles.data}>{data}</Text></View> : null}
@@ -54,10 +54,10 @@ export default function FAQ(){
       >
                 <View>
                 <Link to="/Welcome">
-                <Icon name="angle-left" color="orange" size={50} /></Link>
+                <Icon name="angle-left" color="#422C63" size={50} /></Link>
                 </View>
-        <View style={{marginTop: 30,}}><Text style={styles.title}>Olvide mi usuario, click aqui <Icon name="envelope-square" color="orange" size={25} /></Text></View>
-        <View><Text style={styles.title}>Olvide mi contraseña, click aqui <Icon name="key" color="orange" size={25} /></Text></View>
+        <View style={{marginTop: 30,}}><Text style={styles.title}>Olvide mi usuario, click aqui <Icon name="envelope-square" color="#422C63" size={25} /></Text></View>
+        <View><Text style={styles.title}>Olvide mi contraseña, click aqui <Icon name="key" color="#422C63" size={25} /></Text></View>
         <ScrollView>
         { renderAccordians() }
         </ScrollView>

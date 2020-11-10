@@ -4,7 +4,7 @@ import {View, TouchableHighlight} from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Link } from '@react-navigation/native';
 
-const Login = () => {   
+const Login = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -18,7 +18,7 @@ const Login = () => {
     <View>
           <View>
           <Link to="/Welcome">
-          <Icon name="angle-left" color="orange" size={50} /></Link>
+          <Icon name="angle-left" color="#422C63" size={50} /></Link>
           </View>
 
     <form onSubmit={formik.handleSubmit}>

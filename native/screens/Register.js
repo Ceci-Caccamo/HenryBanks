@@ -23,10 +23,10 @@ const Register = ({ id, name,email, password }) => {
     <View>
                 <View>
                 <Link to="/Welcome">
-                <Icon name="angle-left" color="orange" size={50} /></Link>
+                <Icon name="angle-left" color="#422C63" size={50} /></Link>
                 </View>
       <Formik
-        initialValues={{ 
+        initialValues={{
           name,
           email,
           password,
