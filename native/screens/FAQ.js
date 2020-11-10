@@ -18,7 +18,7 @@ function Accordian({title, data}) {
         <View style={styles.container}>
 
             <View>
-              <TouchableOpacity onPress={toggleExpand}>
+              <TouchableOpacity onPress={toggleExpand}>      
                 <View style={styles.row}>
                 <Text style={styles.title}>{title}</Text>
                 <Icon name={state.expanded? "angle-up":"angle-down"} color="#422C63" size={25} />

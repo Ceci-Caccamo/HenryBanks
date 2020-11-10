@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
       borderWidth:0.1,
       borderColor: 'grey',
       flex: 1,
-      backgroundColor: "#422C63",
+      backgroundColor: "#422C63",   
       marginTop:10,
     },
 });

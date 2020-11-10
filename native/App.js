@@ -15,11 +15,11 @@ import SendMonyScreen from './screens/SendMonyScreen';
 import Transactions from './screens/Transactions';
 import Header from './screens/header';
 import Menu from './screens/menu';
-import FAQ from './screens/FAQ'; 
+import FAQ from './screens/FAQ';
 
 const Stack = createStackNavigator()//contiene la navegacion
 //stack.screen contiene la pantalla
-function MyStack(){
+function MyStack(){   
   return (
     <Stack.Navigator>
     <Stack.Screen name="Welcome" component={Welcome} options={{headerShown:false}}/>
