@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -23,11 +23,13 @@ import Header from "../components/Header";
 import CustomInput from "../components/CustomInput";
 import { theme } from "../core/theme";
 import Icon from "react-native-vector-icons/FontAwesome";
+/* import GoogleLogin from "../components/GoogleLogin"; */
 
 const Login = ({ id, email, password, isValid, navigation }) => {
   const dispatch = useDispatch();
   const session = useSelector((state) => state.session.userDetail);
   console.log(session);
+
   return (
     <Background>
       <Logo />
@@ -39,7 +41,6 @@ const Login = ({ id, email, password, isValid, navigation }) => {
           initialValues={{
             email: "",
             password: "",
-
           }}
           validationSchema={Yup.object({
             email: Yup.string()
@@ -48,16 +49,17 @@ const Login = ({ id, email, password, isValid, navigation }) => {
             password: Yup.string().required("Please Enter your password"),
           })}
           onSubmit={(values, action) => {
-            let user = {...values};
-            
+            let user = { ...values };
+
             //To lower case (wtf?)
             user.email = user.email.toLowerCase();
 
             action.resetForm();
-            dispatch(loguinUser(user.email,user.password));
+            dispatch(loguinUser(user.email, user.password));
             // navigation.navigate("RegisterModal");
           }}
         >
+          {/* <GoogleLogin/> */}
           {({ handleChange, handleSubmit, values, errors, touched }) => (
             <View>
               <CustomInput
