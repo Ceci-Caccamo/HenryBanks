@@ -23,7 +23,7 @@ import Header from "../components/Header";
 import CustomInput from "../components/CustomInput";
 import { theme } from "../core/theme";
 import Icon from "react-native-vector-icons/FontAwesome";
-/* import GoogleLogin from "../components/GoogleLogin"; */
+import GoogleLogin from "../components/GoogleLogin";
 
 const Login = ({ id, email, password, isValid, navigation }) => {
   const dispatch = useDispatch();
@@ -59,7 +59,7 @@ const Login = ({ id, email, password, isValid, navigation }) => {
             // navigation.navigate("RegisterModal");
           }}
         >
-          {/* <GoogleLogin/> */}
+          <GoogleLogin/>
           {({ handleChange, handleSubmit, values, errors, touched }) => (
             <View>
               <CustomInput
