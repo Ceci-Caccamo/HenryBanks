@@ -6,7 +6,7 @@ import { theme } from '../core/theme';
 const CustomInput = ({ errorText, ...props }) => (
   <View style={styles.container}>
     <Input
-      style={styles.input}
+      style={styles.input}     
       selectionColor={theme.colors.primary}
       underlineColor="transparent"
       mode="outlined"

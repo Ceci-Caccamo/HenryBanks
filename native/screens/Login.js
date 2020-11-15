@@ -57,8 +57,8 @@ const Login = ({ id, email, password, isValid, navigation }) => {
 					}}
 				>
 					{({ handleChange, handleSubmit, values, errors, touched }) => (
-						<View>
-							<CustomInput 
+						<View >
+							<CustomInput
 								label='Correo' 
 								name='email' 
 								returnKeyType='next' 
@@ -113,6 +113,8 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		marginTop: 24,
+		borderRadius: 30,
+		fontWeight: 'bold',
 	},
 	row: {
 		flexDirection: 'row',
