@@ -26,25 +26,21 @@ function MyStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-				name='Card'
-				component={Card}
-				options={{ title: 'Card' }}
+        name="welcome"
+        component={Welcome}
+        options={{ headerShown: false }}
+      />
+			<Stack.Screen
+				name='Login'
+				component={Login}
+        options={{ title: 'Iniciar sesión' }}
+        options={{ headerShown: false }}
 			/>
       <Stack.Screen
         name="PosConsolidada"
         component={PosConsolidada}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="welcome"
-        component={Welcome}
-        options={{ headerShown: false }}
-      />
-      {/* <Stack.Screen
-        name="Menu"
-        component={Menu}
-        // options={{ headerShown: false }}
-      /> */}
 			<Stack.Screen
 				name='Register'
 				component={Register}
@@ -55,12 +51,16 @@ function MyStack() {
 				component={Estatistics}
 				// options={{ headerShown: false }}
 			/>
-			<Stack.Screen
-				name='Login'
-				component={Login}
-        options={{ title: 'Iniciar sesión' }}
-        options={{ headerShown: false }}
+      <Stack.Screen
+				name='Card'
+				component={Card}
+				options={{ title: 'Card' }}
 			/>
+      {/* <Stack.Screen
+        name="Menu"
+        component={Menu}
+        // options={{ headerShown: false }}
+      /> */}
 			{/* <Stack.Screen
         name="Header"
         component={Header}
