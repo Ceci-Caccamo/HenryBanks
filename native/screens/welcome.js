@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 
+
 const image = { uri: 'https://cdn.pixabay.com/photo/2016/05/22/20/13/background-1409125_960_720.png' };
 
 function Welcome({ navigation }) {
@@ -13,12 +14,17 @@ function Welcome({ navigation }) {
 	const onPressFAQ = () => {
 		navigation.navigate('FAQ');
 	};
+	const onPressContact = () => {
+		navigation.navigate('Contact');
+	};
+
+	
 
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={image} style={styles.image}>
 				<Text style={styles.title}>HBank</Text>
-
+				
 				<Text
 					style={{
 						backgroundColor: 'transparent',
@@ -44,6 +50,7 @@ function Welcome({ navigation }) {
 								<Text style={styles.help}>¿Necesitas ayuda?</Text>
 							</View>
 						</TouchableOpacity>
+				
 					</View>
 				</Text>
 			</ImageBackground>

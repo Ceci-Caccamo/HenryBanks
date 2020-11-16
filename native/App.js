@@ -14,6 +14,11 @@ import SendMonyScreen from "./screens/SendMonyScreen";
 import Transactions from "./screens/Transactions";
 import RegisterModal from "./components/RegisterModal";
 import AltaUSer from './screens/AltaUser'
+import Contacto from './screens/Contact'
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
+
+
 
 // import Header from './screens/header';
 // import Menu from './screens/menu';
@@ -23,7 +28,7 @@ const Stack = createStackNavigator(); //contiene la navegacion
 //stack.screen contiene la pantalla
 function MyStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName='Contacto' >
       <Stack.Screen
         name="welcome"
         component={Welcome}
@@ -81,6 +86,18 @@ function MyStack() {
         component={FAQ}
         // options={{ headerShown: false }}
       />
+      <Stack.Screen 
+      name="Contacto" 
+      component={Contacto}
+       options={{
+        headerShown: false,
+        headerTitleAlign: 'center',
+        headerStyle: { backgroundColor: 'indigo', shadowColor: 'indigo', elevation: 0 },
+        headerTitleStyle: { color: 'white', fontSize: 16 },
+        headerLeft: () => <Ionicons name='ios-menu' color='white' size={30} style={{ marginHorizontal: 15 }}></Ionicons>,
+        headerRight: () => <Ionicons name='ios-more' color='white' size={30} style={{ marginHorizontal: 15}} ></Ionicons>,
+        
+      }} />
     </Stack.Navigator>
   );
 }
