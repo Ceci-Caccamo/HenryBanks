@@ -1,10 +1,15 @@
 import React from "react";
 import { View, Text } from "react-native";
-import SearchBar from "../components/SearchBar";
-import MenuContact from "../components/MenuContacts";
-import Header from "../components/Header";
+import SearchBar from "../../components/SearchBar";
+import MenuContact from "../../components/MenuContacts";
+import Header from "../../components/Header";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Ionicons from "react-native-vector-icons/Ionicons";
+//Lista Contactos usuarios de HenryBanks Agregados
+//un boton agregar contacto
+//Buscador sobre los contactos
+//lista de usuarios
+
 
 const Contacts = () => {
   return (
@@ -39,7 +44,7 @@ const Contacts = () => {
           /* flexDirection: "row", */
         }}
       >
-        Contacto
+        Contacto HenryBank
       </Text>
       <MenuContact style={{
         
@@ -48,9 +53,10 @@ const Contacts = () => {
       <View>
         <SearchBar 
         style={{
-          zIndex: -10,
-          elevation:3 }} />
-      </View>
+          padding:50
+         
+          }} />
+      </View> 
       </View>
     
   );

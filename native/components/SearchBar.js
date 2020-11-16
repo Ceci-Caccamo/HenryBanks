@@ -20,10 +20,7 @@ export default function SearchBar() {
     firstName:'Ceci',
     lastName:'Caccamo'
   },
-  {
-    firstName:'Ceci',
-    lastName:'Caccamo'
-  }]);
+ ]);
   const [results, setResults] = useState([]);
 
   useEffect(() => {

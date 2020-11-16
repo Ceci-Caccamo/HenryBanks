@@ -29,8 +29,10 @@ export default class MenuContact extends React.Component {
               <Icon name= "ellipsis-v" color= 'white' size={30} onPress={this._openMenu}></Icon>
             }
           >
+            <Menu.Item onPress={() => {}} title="Agregar Contacto" />
             <Menu.Item onPress={() => {}} title="Actualizar" />
             <Menu.Item onPress={() => {}} title="Eliminar" />
+           
            {/*  <Divider />
             <Menu.Item onPress={() => {}} title="Item 3" /> */}
           </Menu>

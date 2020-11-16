@@ -14,7 +14,7 @@ import SendMonyScreen from "./screens/SendMonyScreen";
 import Transactions from "./screens/Transactions";
 import RegisterModal from "./components/RegisterModal";
 import AltaUSer from './screens/AltaUser'
-import Contacto from './screens/Contact'
+import Contacto from './screens/Contactos/Contact'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
@@ -34,11 +34,11 @@ function MyStack() {
         component={Welcome}
         options={{ headerShown: false }}
       />
-      {/* <Stack.Screen
+     {/*  <Stack.Screen
         name="Menu"
         component={Menu}
         // options={{ headerShown: false }}
-      /> */}
+      />  */}
 			<Stack.Screen
 				name='Register'
 				component={Register}
